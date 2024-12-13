@@ -1,0 +1,92 @@
+/* Estilo general */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9; /* Fondo claro */
+  color: #333;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Secciones */
+.section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+.section h1 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  color: #0056b3; /* Color azul para títulos */
+}
+
+/* Texto */
+.section p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Listas ordenadas y desordenadas */
+.section ol, .section ul {
+  padding-left: 20px;
+}
+
+.section ol li, .section ul li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Imagen de perfil */
+.section img {
+  display: block;
+  margin: 0 auto 20px auto; /* Centrar imagen */
+  border-radius: 50%; /* Imagen circular */
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Galería */
+.gallery {
+  display: block;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Adaptable a diferentes tamaños de pantalla */
+}
+
+.gallery-item {
+  text-align: center;
+  flex: 1 1 calc(33.333% - 20px); /* Ancho responsivo */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; /* Efecto hover */
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1); /* Zoom en hover */
+}
+
+.gallery-item p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #444;
+}
+
